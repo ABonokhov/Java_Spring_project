@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> Услуги и цены </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert = "blocks/header :: header "></header>
+<style>
+h1{
+color: #8B008B;
+background:FFE4E1;
+padding: 2px;
+}
+
+   body {
+    background: #DDA0DD; /* Цвет фона */
+    color: #FFFFE0; /* Цвет текста */
+   }
+  </style>
+<div class="bg-light p-5 rounded mt-3">
+   <center>
+    <h1>Услуги и цены</h1>
+   </center>
+</div>
+<center>
+<p class="lead text-muted">Перечень основных процедур проводимых в нашей клинике</p>
+<style>
+.lead text-muted{
+    margin:1;
+    padding: 10px;
+    }
+</style>
+    <a href="/doctors" class="btn btn-primary my-2">Предыдущая страница</a>
+    <a href="/news" class="btn btn-primary my-2">Следующая страница</a>
+</center>
+
+<p>
+    <img th:src="@{img/service1.jpg}"class="service" alt="Прием и консультация" width="374" height="230">
+    <img th:src="@{img/service2.jpg}"class="service" alt="Диагностика" width="374" height="234">
+    <img th:src="@{img/service3.jpg}"class="service" alt="Лабораторные исследования" width="374" height="230">
+    <img th:src="@{img/service4.jpg}"class="service" alt="Анестезиология" width="374" height="230">
+    <img th:src="@{img/service5.jpg}"class="service" alt="Офтальмология" width="374" height="230">
+    <img th:src="@{img/service6.jpg}"class="service" alt="Кастрация и стериализация" width="374" height="230">
+
+    <style>
+   .service {
+    margin-left: 180px;
+    border: 2px solid #55c5e10; /* Рамка вокруг фотографии */
+    padding: 15px; /* Расстояние от картинки до рамки */
+    background: #FFDAB9; /* Цвет фона */
+    margin-right: 25px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+    margin-top: 50px;
+</style>
+
+</p>
+
+<div class="ServiceLabel1">
+    <h5> Прием и консультация </h5>
+
+    <style>
+        .ServiceLabel1{
+        margin-left: 250px;
+        margin-top: -305px;
+        }
+
+    </style>
+</div>
+
+<div class="ServiceLabel2">
+    <h5> Диагностика </h5>
+
+    <style>
+        .ServiceLabel2{
+        margin-left: 890px;
+        margin-top: -32px;
+        }
+
+    </style>
+</div>
+
+<div class="ServiceLabel3">
+    <h5> Лабораторные исследования </h5>
+
+    <style>
+        .ServiceLabel3{
+        margin-left: 1397px;
+        margin-top: -32px;
+        }
+
+    </style>
+</div>
+
+<div class="ServiceLabel4">
+    <h5> Анестезиология </h5>
+
+    <style>
+        .ServiceLabel4{
+        margin-left: 285px;
+        margin-top: 270px;
+
+        }
+
+    </style>
+</div>
+
+<div class="ServiceLabel5">
+    <h5> Офтальмология</h5>
+
+    <style>
+        .ServiceLabel5{
+        margin-left: 865px;
+        margin-top: -32px;
+
+
+        }
+
+    </style>
+</div>
+
+<div class="ServiceLabel6">
+    <h5> Кастрация и стериализация</h5>
+
+    <style>
+        .ServiceLabel6{
+        margin-left: 1425px;
+        margin-top: -32px;
+
+        }
+
+    </style>
+</div>
+
+
+<div class="block-1">
+<h2 class="featurette-heading"> Расценки на самые популярные услуги <span class="text-muted"> (цены действительны до 31 декабря):</span></h2>
+<p class="lead">Прием и консультация - 25 рублей; Диагностика - 9 рублей; Лабораторные исследования - 18 рублей; Анестезиология - 25 рублей; Офтальмология - 19 рублей; Кастрация и стериализация - от 200 рублей (зависит от веса питомца).</p><br/>
+<center>
+    <a class=" btn btn-lg btn-primary" href="/consultation" role="button"> Запись на приём </a> <br/><br/><br/>
+</center>
+<style>
+         .block-1{
+         margin-top: 50px;
+         margin-left: auto;
+    margin-right: auto;
+    width: 34em;
+
+
+ .lead {
+margin-left: 30px;
+text-align: center;
+}
+    </style>
+</div>
+
+
+</body>
+</html>
